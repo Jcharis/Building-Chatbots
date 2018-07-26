@@ -1,0 +1,105 @@
+
+intents:
+  - greet
+  - goodbye
+  - mood_affirm
+  - mood_deny
+  - mood_great
+  - mood_unhappy
+  - purchase
+  - purchase_affirm
+  - purchase_deny
+  - inform
+  - weather
+  
+entities:
+ - location
+ - money
+ 
+slots:
+ location:
+   type: text
+
+
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_purchase
+- utter_price
+- utter_did_that_help
+- utter_ask_item
+- utter_show_item
+- utter_happy
+- utter_goodbye
+- utter_unclear
+- utter_ask_location
+
+templates:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hi How are you?"
+  - text: "What's up"
+  - text: "Bonjour"
+
+  utter_cheer_up:
+  - text: "Stay motivated,all is well"
+  - text: "Here is something to make you happy"
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+  - text: "Was it helpful?"
+
+  utter_unclear:
+  - text: "I am not sure what you are aiming for."
+  - text: "How do you mean? Can you clarify "
+  - text: "Not quite sure what you want. "
+  
+  utter_happy:
+  - text: "Great carry on!" 
+  - text: "Cool,what can I help you with?"
+  
+  utter_purchase:
+  - text: 'What item do you want to buy?'
+  - text: 'Here are some recommended products'
+  - text: 'You want to buy this?'
+  - text: 'We only have this?'
+  - text: 'Can you give me the specs ?'
+  
+  utter_ask_item:
+  - text: 'What item do you want to buy?'
+  - text: 'How many do you want to buy?'
+  - text: 'Which type?'
+  - text: 'What brand or model?'
+
+  utter_show_item:
+  - text: "Here are some suggestions."
+  - text: "Check this one out."
+  - text: "We only have this product"
+  - text: "Sending sample picture"
+    
+  utter_price:
+  - text: "It will cost you this much"
+  - text: "The price is 100"
+  - text: "You will pay"
+  - text: "Here is the bill"
+  - text: "The total cost is 2000, you can pay with your credit card."
+
+  utter_ask_location:
+  - text:'In what location?'
+  - text:'In which place?'
+  - text:'Where precisely?'
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Talk to you later"
+  - text: "Cu"
+  - text: "Aurevoir"
+  - text: "A bientot "
+  - text: "goodbye"
+  - text: "have a nice day"
+  - text: "see you around"
+  - text: "bye bye"
+  - text: "See you later"
+  
